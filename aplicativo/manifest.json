@@ -1,0 +1,22 @@
+{
+    "name":"BroadwayVerse",
+    "short_name":"Broadway",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#0b1020",
+    "theme_color":"#1d2550",
+    "orientation":"portrait",
+
+    "icons":[
+        {
+            "src":"imagens/Broadwayverse.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"imagens/Broadwayverse.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}
