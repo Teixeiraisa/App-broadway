@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz BroadwayVerse</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1> Quiz BroadwayVerse</h1>
+
+        <p>
+            Responda as perguntas e torne-se uma estrela da Broadway!
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="musicais.html">Musicais</a>
+
+        <a href="quiz.html">Quiz</a>
+
+    </nav>
+
+    <!-- XP -->
+
+    <section>
+
+        <h2>⭐ Seu Progresso</h2>
+
+        <div class="xp-container">
+
+            <div class="xp-bar"
+                 id="xpBar">
+
+            </div>
+
+        </div>
+
+        <h3 id="nivel">
+            Nível 1 - Iniciante
+        </h3>
+
+    </section>
+
+    <!-- Pergunta -->
+
+    <section class="quiz-box">
+
+        <h2 id="pergunta">
+
+            Carregando...
+
+        </h2>
+
+        <div id="respostas">
+
+        </div>
+
+    </section>
+
+    <!-- Pontuação -->
+
+    <section>
+
+        <h2 id="pontos">
+            Pontos: 0
+        </h2>
+
+        <h2 id="streak">
+            Sequência: 0 🔥
+        </h2>
+
+    </section>
+
+    <!-- Medalhas -->
+
+    <section>
+
+        <h2>🏅 Medalhas</h2>
+
+        <div id="medalhas">
+
+            Nenhuma medalha ainda.
+
+        </div>
+
+    </section>
+
+    <!-- Resultado -->
+
+    <section>
+
+        <h2 id="resultado">
+
+        </h2>
+
+    </section>
+
+    <footer>
+
+        <p>
+            BroadwayVerse © 2026
+        </p>
+
+    </footer>
+
+    <script src="quiz.js"></script>
+
+    <script>
+
+    if("serviceWorker" in navigator){
+
+    navigator.serviceWorker.register(
+    "service-worker.js"
+    );
+
+    }
+
+</script>
+</body>
+
+</html>
