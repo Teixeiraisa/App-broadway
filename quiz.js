@@ -2,7 +2,17 @@
 // QUIZ BROADWAYVERSE
 // Perguntas, pontuação salva e desbloqueio por pontos
 // =========================
+// Embaralha um array sem mexer no original
+function embaralhar(array) {
+    const copia = [...array];
 
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+    }
+
+    return copia;
+}
 // Lista de perguntas do quiz
 const perguntas = [
     {
@@ -217,7 +227,10 @@ function mostrarPergunta() {
     perguntaEl.textContent = perguntaAtual.pergunta;
     respostasEl.innerHTML = "";
 
-    perguntaAtual.respostas.forEach((opcao) => {
+    // Aqui as alternativas ficam em ordem aleatória
+    const respostasMisturadas = embaralhar(perguntaAtual.respostas);
+
+    respostasMisturadas.forEach((opcao) => {
         const botao = document.createElement("button");
         botao.className = "resposta-btn";
         botao.textContent = opcao;

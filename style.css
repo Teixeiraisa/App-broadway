@@ -535,3 +535,29 @@ footer{
         opacity:0.34;
     }
 }
+/* =========================
+   Vídeos desbloqueáveis
+========================= */
+
+.conteudo-musical {
+    margin-top: 15px;
+    display: none;
+}
+
+.conteudo-musical iframe,
+.conteudo-musical video {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    min-height: 315px;
+}
+
+.bloqueio-card {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.bloqueio-card.bloqueado iframe,
+.bloqueio-card.bloqueado video {
+    display: none;
+}
