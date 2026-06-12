@@ -1,284 +1,304 @@
 // =========================
-// PERGUNTAS DO QUIZ
+// QUIZ BROADWAYVERSE
+// Perguntas, pontuação salva e desbloqueio por pontos
 // =========================
 
+// Lista de perguntas do quiz
 const perguntas = [
-
-{
-pergunta:"Qual musical utiliza músicas do ABBA?",
-respostas:["Hamilton","Mamma Mia!","Chicago","Cats"],
-correta:"Mamma Mia!"
-},
-
-{
-pergunta:"Quem é a protagonista de Heathers?",
-respostas:["Veronica","Sophie","Lydia","Elphaba"],
-correta:"Veronica"
-},
-
-{
-pergunta:"Qual musical conta a história de Alexander Hamilton?",
-respostas:["Hamilton","Grease","Wicked","Six"],
-correta:"Hamilton"
-},
-
-{
-pergunta:"Qual musical possui a personagem Elphaba?",
-respostas:["Chicago","Wicked","Cats","Mamma Mia!"],
-correta:"Wicked"
-},
-
-{
-pergunta:"Qual musical tem Roxie Hart?",
-respostas:["Chicago","Hamilton","Heathers","Six"],
-correta:"Chicago"
-},
-
-{
-pergunta:"Qual musical possui Lydia Deetz?",
-respostas:["Grease","Wicked","Beetlejuice","Cats"],
-correta:"Beetlejuice"
-},
-
-{
-pergunta:"Qual musical se passa em Westerberg High?",
-respostas:["Heathers","Chicago","Six","Hamilton"],
-correta:"Heathers"
-},
-
-{
-pergunta:"Qual musical é inspirado em Oz?",
-respostas:["Wicked","Cats","Mamma Mia!","Chicago"],
-correta:"Wicked"
-},
-
-{
-pergunta:"Qual musical usa muito rap e hip-hop?",
-respostas:["Hamilton","Grease","Cats","Chicago"],
-correta:"Hamilton"
-},
-
-{
-pergunta:"Qual musical tem Danny e Sandy?",
-respostas:["Grease","Six","Wicked","Heathers"],
-correta:"Grease"
-},
-
-{
-pergunta:"Qual musical é baseado nas músicas do ABBA?",
-respostas:["Mamma Mia!","Cats","Hamilton","Chicago"],
-correta:"Mamma Mia!"
-},
-
-{
-pergunta:"Qual musical tem seis rainhas inglesas?",
-respostas:["Six","Chicago","Wicked","Cats"],
-correta:"Six"
-},
-
-{
-pergunta:"Qual musical possui Defying Gravity?",
-respostas:["Wicked","Mamma Mia!","Hamilton","Grease"],
-correta:"Wicked"
-},
-
-{
-pergunta:"Qual musical é famoso pelos gatos?",
-respostas:["Cats","Six","Chicago","Hamilton"],
-correta:"Cats"
-},
-
-{
-pergunta:"Onde fica a Broadway?",
-respostas:["Nova York","Londres","Paris","Roma"],
-correta:"Nova York"
-}
-
+    {
+        pergunta: "Qual musical é baseado nas canções do ABBA?",
+        respostas: ["Hamilton", "Mamma Mia!", "Chicago", "Wicked"],
+        correta: "Mamma Mia!"
+    },
+    {
+        pergunta: "Quem é a protagonista de Heathers?",
+        respostas: ["Veronica", "Sophie", "Elphaba", "Roxie"],
+        correta: "Veronica"
+    },
+    {
+        pergunta: "Qual musical conta a vida de Alexander Hamilton?",
+        respostas: ["Hamilton", "Cats", "Grease", "Six"],
+        correta: "Hamilton"
+    },
+    {
+        pergunta: "Qual musical apresenta Elphaba e Glinda?",
+        respostas: ["Wicked", "Chicago", "Beetlejuice", "Heathers"],
+        correta: "Wicked"
+    },
+    {
+        pergunta: "Qual musical tem Roxie Hart como personagem principal?",
+        respostas: ["Chicago", "Mamma Mia!", "Hamilton", "Cats"],
+        correta: "Chicago"
+    },
+    {
+        pergunta: "Qual musical é inspirado no filme de Tim Burton?",
+        respostas: ["Beetlejuice", "Wicked", "Six", "Hamilton"],
+        correta: "Beetlejuice"
+    },
+    {
+        pergunta: "Qual musical se passa em Westerberg High?",
+        respostas: ["Heathers", "Chicago", "Grease", "Mamma Mia!"],
+        correta: "Heathers"
+    },
+    {
+        pergunta: "Qual musical mistura história americana com rap e hip-hop?",
+        respostas: ["Hamilton", "Cats", "Chicago", "Wicked"],
+        correta: "Hamilton"
+    },
+    {
+        pergunta: "Qual musical tem Danny e Sandy?",
+        respostas: ["Grease", "Six", "Heathers", "Wicked"],
+        correta: "Grease"
+    },
+    {
+        pergunta: "Qual musical é famoso pelo número Defying Gravity?",
+        respostas: ["Wicked", "Chicago", "Hamilton", "Beetlejuice"],
+        correta: "Wicked"
+    },
+    {
+        pergunta: "Qual musical tem seis rainhas da Inglaterra como protagonistas?",
+        respostas: ["Six", "Cats", "Grease", "Chicago"],
+        correta: "Six"
+    },
+    {
+        pergunta: "Qual musical é conhecido pelos gatos?",
+        respostas: ["Cats", "Hamilton", "Heathers", "Mamma Mia!"],
+        correta: "Cats"
+    },
+    {
+        pergunta: "Qual musical se passa em uma escola e fala sobre popularidade?",
+        respostas: ["Heathers", "Chicago", "Hamilton", "Six"],
+        correta: "Heathers"
+    },
+    {
+        pergunta: "Qual musical foi criado por Lin-Manuel Miranda?",
+        respostas: ["Hamilton", "Wicked", "Cats", "Grease"],
+        correta: "Hamilton"
+    },
+    {
+        pergunta: "Qual musical mostra a história antes de Dorothy chegar em Oz?",
+        respostas: ["Wicked", "Chicago", "Mamma Mia!", "Beetlejuice"],
+        correta: "Wicked"
+    },
+    {
+        pergunta: "Qual musical é ligado a jazz, crime e fama?",
+        respostas: ["Chicago", "Hamilton", "Grease", "Six"],
+        correta: "Chicago"
+    },
+    {
+        pergunta: "Qual musical foi inspirado em um filme de 1988?",
+        respostas: ["Heathers", "Cats", "Wicked", "Mamma Mia!"],
+        correta: "Heathers"
+    },
+    {
+        pergunta: "Qual musical acontece no casamento de Sophie?",
+        respostas: ["Mamma Mia!", "Chicago", "Hamilton", "Beetlejuice"],
+        correta: "Mamma Mia!"
+    },
+    {
+        pergunta: "Em qual cidade fica a Broadway?",
+        respostas: ["Nova York", "Londres", "Paris", "Roma"],
+        correta: "Nova York"
+    },
+    {
+        pergunta: "Qual termo é usado por fãs para gravações não oficiais de musicais?",
+        respostas: ["Slime Tutorial", "Soundtrack", "Backstage", "Encore"],
+        correta: "Slime Tutorial"
+    },
+    {
+        pergunta: "Qual musical apresenta a canção Seventeen?",
+        respostas: ["Heathers", "Chicago", "Wicked", "Cats"],
+        correta: "Heathers"
+    },
+    {
+        pergunta: "Qual musical tem a música Dancing Queen?",
+        respostas: ["Mamma Mia!", "Hamilton", "Six", "Beetlejuice"],
+        correta: "Mamma Mia!"
+    },
+    {
+        pergunta: "Qual musical é baseado na peça de Andrew Lloyd Webber sobre gatos?",
+        respostas: ["Cats", "Grease", "Chicago", "Hamilton"],
+        correta: "Cats"
+    },
+    {
+        pergunta: "Qual musical mostra a vida de Eliza Schuyler?",
+        respostas: ["Hamilton", "Wicked", "Heathers", "Chicago"],
+        correta: "Hamilton"
+    },
+    {
+        pergunta: "Qual musical foi adaptado para o cinema em 2002 com destaque para o jazz?",
+        respostas: ["Chicago", "Mamma Mia!", "Six", "Cats"],
+        correta: "Chicago"
+    }
 ];
 
 // =========================
-// VARIÁVEIS
+// CHAVES DO LOCALSTORAGE
+// Guardam pontos e progresso no navegador
 // =========================
 
-let indice = 0;
-let pontos = 0;
-let streak = 0;
+const CHAVE_PONTOS = "broadwayversePontos";
+const CHAVE_INDICE = "broadwayverseIndiceQuiz";
+const CHAVE_ACERTOS = "broadwayverseAcertos";
 
 // =========================
-// ELEMENTOS
+// ESTADO DO QUIZ
+// Índice da pergunta, pontos e acertos
 // =========================
 
-const pergunta =
-document.getElementById("pergunta");
+let indice = Number(localStorage.getItem(CHAVE_INDICE)) || 0;
+let pontos = Number(localStorage.getItem(CHAVE_PONTOS)) || 0;
+let acertos = Number(localStorage.getItem(CHAVE_ACERTOS)) || 0;
 
-const respostas =
-document.getElementById("respostas");
+// Se o índice salvo estiver fora do intervalo, começa do início
+if (indice < 0 || indice >= perguntas.length) {
+    indice = 0;
+}
 
-const pontosTexto =
-document.getElementById("pontos");
+// =========================
+// ELEMENTOS DA TELA
+// Liga o JavaScript aos blocos do HTML
+// =========================
 
-const streakTexto =
-document.getElementById("streak");
+const perguntaEl = document.getElementById("pergunta");
+const respostasEl = document.getElementById("respostas");
+const pontosEl = document.getElementById("pontos");
+const liberadosEl = document.getElementById("liberados");
+const totalEl = document.getElementById("total");
+const feedbackEl = document.getElementById("feedback");
+const resultadoEl = document.getElementById("resultado");
 
-const resultado =
-document.getElementById("resultado");
+// =========================
+// FUNÇÃO DE SALVAR
+// Guarda o progresso no navegador
+// =========================
 
-const medalhas =
-document.getElementById("medalhas");
+function salvarProgresso() {
+    localStorage.setItem(CHAVE_PONTOS, String(pontos));
+    localStorage.setItem(CHAVE_INDICE, String(indice));
+    localStorage.setItem(CHAVE_ACERTOS, String(acertos));
+}
 
-const xpBar =
-document.getElementById("xpBar");
+// =========================
+// FUNÇÃO DE MUSICAIS LIBERADOS
+// Cada 50 pontos libera um novo musical
+// =========================
 
-const nivel =
-document.getElementById("nivel");
+function calcularLiberados() {
+    // Mamma Mia! fica liberado no começo
+    // Depois: 50, 100, 150, 200 e 250 pontos
+    return Math.min(6, 1 + Math.floor(pontos / 50));
+}
+
+// =========================
+// ATUALIZAR PAINEL
+// Mostra pontos, liberados e progresso
+// =========================
+
+function atualizarPainel() {
+    pontosEl.textContent = "Pontos: " + pontos;
+    liberadosEl.textContent = "Musicais liberados: " + calcularLiberados() + " de 6";
+    totalEl.textContent = "Pergunta " + (indice + 1) + " de " + perguntas.length;
+}
 
 // =========================
 // MOSTRAR PERGUNTA
+// Exibe a pergunta atual e monta os botões
 // =========================
 
-function mostrarPergunta(){
+function mostrarPergunta() {
+    if (indice >= perguntas.length) {
+        finalizarQuiz();
+        return;
+    }
 
-respostas.innerHTML="";
+    const perguntaAtual = perguntas[indice];
 
-pergunta.textContent =
-perguntas[indice].pergunta;
+    perguntaEl.textContent = perguntaAtual.pergunta;
+    respostasEl.innerHTML = "";
 
-perguntas[indice].respostas.forEach(opcao=>{
+    perguntaAtual.respostas.forEach((opcao) => {
+        const botao = document.createElement("button");
+        botao.className = "resposta-btn";
+        botao.textContent = opcao;
 
-const botao =
-document.createElement("button");
+        botao.addEventListener("click", () => verificarResposta(opcao));
 
-botao.classList.add("resposta-btn");
+        respostasEl.appendChild(botao);
+    });
 
-botao.textContent = opcao;
-
-botao.onclick=()=>verificar(opcao);
-
-respostas.appendChild(botao);
-
-});
-
-}
-
-// =========================
-// VERIFICAR
-// =========================
-
-function verificar(opcao){
-
-if(opcao===perguntas[indice].correta){
-
-pontos +=10;
-streak++;
-
-}else{
-
-streak = 0;
-
-}
-
-indice++;
-
-atualizar();
-
-if(indice < perguntas.length){
-
-mostrarPergunta();
-
-}else{
-
-finalizar();
-
-}
-
+    feedbackEl.textContent = "Escolha uma resposta para continuar.";
+    atualizarPainel();
 }
 
 // =========================
-// ATUALIZAR HUD
+// VERIFICAR RESPOSTA
+// Define se a resposta está certa ou errada
 // =========================
 
-function atualizar(){
+function verificarResposta(opcaoEscolhida) {
+    const respostaCorreta = perguntas[indice].correta;
+    const botoes = document.querySelectorAll(".resposta-btn");
 
-pontosTexto.textContent =
-"Pontos: " + pontos;
+    // Bloqueia os botões depois de responder
+    botoes.forEach((botao) => {
+        botao.disabled = true;
+    });
 
-streakTexto.textContent =
-"Sequência: " + streak + " 🔥";
+    if (opcaoEscolhida === respostaCorreta) {
+        pontos += 10;
+        acertos += 1;
+        feedbackEl.textContent = "Você acertou!";
+        alert("Você acertou!");
+    } else {
+        feedbackEl.textContent = "Você errou! Resposta correta: " + respostaCorreta;
+        alert("Você errou!");
+    }
 
-let porcentagem =
-(pontos / 150) * 100;
+    indice += 1;
+    salvarProgresso();
+    atualizarPainel();
 
-xpBar.style.width =
-porcentagem + "%";
-
-if(pontos >= 40){
-
-nivel.textContent =
-"Nível 2 - Fã de Musicais";
-
-}
-
-if(pontos >= 80){
-
-nivel.textContent =
-"Nível 3 - Estrela da Broadway";
-
-}
-
-if(pontos >= 120){
-
-nivel.textContent =
-"Nível 4 - Lenda da Broadway";
-
-}
-
+    // Pequena pausa visual antes da próxima pergunta
+    setTimeout(() => {
+        if (indice < perguntas.length) {
+            mostrarPergunta();
+        } else {
+            finalizarQuiz();
+        }
+    }, 250);
 }
 
 // =========================
-// RESULTADO FINAL
+// FINALIZAR QUIZ
+// Mostra o resultado final e salva a pontuação
 // =========================
 
-function finalizar(){
+function finalizarQuiz() {
+    perguntaEl.textContent = "Quiz finalizado.";
+    respostasEl.innerHTML = "";
 
-pergunta.textContent =
-"Quiz Finalizado!";
+    let mensagemFinal = "";
+    if (pontos < 50) {
+        mensagemFinal = "Você terminou com " + pontos + " pontos.";
+    } else if (pontos < 100) {
+        mensagemFinal = "Você terminou com " + pontos + " pontos e liberou mais musicais.";
+    } else {
+        mensagemFinal = "Você terminou com " + pontos + " pontos e avançou muito no desbloqueio.";
+    }
 
-respostas.innerHTML="";
+    resultadoEl.textContent = mensagemFinal;
+    feedbackEl.textContent = "Jogue novamente para aumentar sua pontuação.";
 
-if(pontos <= 50){
-
-resultado.textContent =
-"🥉 Medalha Bronze";
-
-medalhas.innerHTML =
-"🥉";
-
-}
-
-else if(pontos <= 100){
-
-resultado.textContent =
-"🥈 Medalha Prata";
-
-medalhas.innerHTML =
-"🥈";
-
-}
-
-else{
-
-resultado.textContent =
-"🥇 Medalha Ouro";
-
-medalhas.innerHTML =
-"🥇";
-
-}
-
+    // Reseta o índice para a próxima vez que abrir o quiz
+    indice = 0;
+    salvarProgresso();
+    atualizarPainel();
 }
 
 // =========================
 // INICIAR QUIZ
+// Mostra a primeira pergunta ao carregar
 // =========================
 
 mostrarPergunta();

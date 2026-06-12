@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 <head>
 
-    <!-- Configurações básicas -->
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Nome do projeto -->
+    <!-- Título -->
     <title>BroadwayVerse</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,39 +30,46 @@
 
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Elementos decorativos do fundo -->
+    <div class="fundo-teatro"></div>
+
+    <!-- Cabeçalho principal -->
     <header>
+
+        <div class="cortina-esquerda"></div>
+        <div class="cortina-direita"></div>
 
         <h1>BroadwayVerse</h1>
 
         <p>
-            O universo dos musicais mais famosos da Broadway!
+            Explorando a história, os musicais e a cultura da Broadway.
         </p>
 
     </header>
 
-    <!-- Menu -->
+    <!-- Navegação -->
     <nav>
 
         <a href="index.html">Início</a>
         <a href="musicais.html">Musicais</a>
         <a href="quiz.html">Quiz</a>
+        <a href="desbloqueios.html">Desbloqueios</a>
 
     </nav>
 
-    <!-- Banner principal -->
+    <!-- Banner -->
     <section class="banner">
 
-        <h2>🎭 Bem-vindo à Broadway</h2>
+        <h2>A Broadway além dos palcos</h2>
 
         <p>
-            Descubra os maiores sucessos dos palcos,
-            teste seus conhecimentos e torne-se uma
-            verdadeira estrela da Broadway!
+            Localizada em Nova York, a Broadway reúne alguns dos
+            teatros mais famosos do mundo e recebe milhões de
+            espectadores todos os anos.
         </p>
 
         <a href="quiz.html" class="botao">
-            ⭐ Jogar Agora
+            Começar Quiz
         </a>
 
     </section>
@@ -60,19 +77,44 @@
     <!-- História -->
     <section class="historia">
 
-        <h2>📖 História da Broadway</h2>
+        <h2>
+            <i class="fa-solid fa-landmark"></i>
+            História da Broadway
+        </h2>
 
         <p>
-            A Broadway é considerada o principal centro
-            de teatro musical do mundo. Localizada em
-            Nova York, ela abriga dezenas de espetáculos
-            que misturam música, dança e atuação.
+            A Broadway é considerada o principal centro de teatro
+            musical dos Estados Unidos. O nome passou a representar
+            espetáculos profissionais apresentados nos grandes
+            teatros de Manhattan.
         </p>
 
         <p>
-            Muitos musicais famosos surgiram ali, como
-            Mamma Mia!, Wicked, Hamilton, Chicago e
-            Heathers.
+            Produções como Hamilton, Wicked, Chicago e The Phantom
+            of the Opera ajudaram a transformar a Broadway em uma
+            referência mundial do entretenimento.
+        </p>
+
+    </section>
+
+    <!-- Slime Tutorials -->
+    <section class="historia">
+
+        <h2>
+            <i class="fa-solid fa-video"></i>
+            Slime Tutorials
+        </h2>
+
+        <p>
+            Entre fãs de teatro musical, o termo "Slime Tutorial"
+            é utilizado para identificar gravações não oficiais de
+            espetáculos feitas por espectadores.
+        </p>
+
+        <p>
+            Essas gravações ajudaram muitas pessoas a conhecer
+            musicais que não estavam disponíveis em seus países,
+            contribuindo para a divulgação da cultura da Broadway.
         </p>
 
     </section>
@@ -80,49 +122,76 @@
     <!-- Destaques -->
     <section class="destaques">
 
-        <h2>🌟 Musicais em Destaque</h2>
+        <h2>
+            <i class="fa-solid fa-star"></i>
+            Musicais em Destaque
+        </h2>
 
         <div class="cards">
 
             <div class="card">
-                <h3>🎶 Mamma Mia!</h3>
+
+                <h3>Mamma Mia!</h3>
+
                 <p>
-                    Uma história divertida embalada
-                    pelos maiores sucessos do ABBA.
+                    Musical baseado em sucessos do grupo sueco ABBA.
                 </p>
+
             </div>
 
             <div class="card">
-                <h3>🖤 Heathers</h3>
+
+                <h3>Wicked</h3>
+
                 <p>
-                    Um clássico cult sobre amizade,
-                    popularidade e escolhas.
+                    Releitura da história das Bruxas de Oz.
                 </p>
+
             </div>
 
             <div class="card">
-                <h3>🧙 Wicked</h3>
+
+                <h3>Hamilton</h3>
+
                 <p>
-                    A história nunca contada das
-                    bruxas de Oz.
+                    Musical que mistura história americana e hip-hop.
                 </p>
+
             </div>
 
         </div>
 
     </section>
 
-    <!-- Download App -->
-    <section class="download">
+    <!-- Curiosidade -->
+    <section class="historia">
 
-        <h2>📱 Aplicativo</h2>
+        <h2>
+            <i class="fa-solid fa-lightbulb"></i>
+            Curiosidade
+        </h2>
 
         <p>
-            Instale o BroadwayVerse no seu celular.
+            Para um teatro ser oficialmente considerado parte da
+            Broadway, ele precisa possuir pelo menos 500 lugares.
+        </p>
+
+    </section>
+
+    <!-- Instalação -->
+    <section class="download">
+
+        <h2>
+            <i class="fa-solid fa-mobile-screen"></i>
+            Aplicativo
+        </h2>
+
+        <p>
+            Instale o BroadwayVerse em seu dispositivo.
         </p>
 
         <button id="installBtn">
-            📥 Baixar Aplicativo
+            Instalar Aplicativo
         </button>
 
     </section>
@@ -136,9 +205,18 @@
 
     </footer>
 
-    <!-- Script principal -->
+    <!-- Script -->
     <script src="script.js"></script>
 
-</body>
+    <script>
 
+    if("serviceWorker" in navigator){
+
+        navigator.serviceWorker.register(
+            "service-worker.js"
+        );
+
+    }
+
+    </script>
 </html>

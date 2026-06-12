@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba -->
+    <title>Desbloqueios | BroadwayVerse</title>
+
+    <!-- Fontes do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícones do projeto -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Manifesto do aplicativo -->
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+    <!-- Fundo decorativo -->
+    <div class="fundo-teatro"></div>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <div class="cortina-esquerda"></div>
+        <div class="cortina-direita"></div>
+
+        <h1>Desbloqueios</h1>
+
+        <p>
+            Ganhe pontos no quiz para liberar novos musicais.
+        </p>
+
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+
+        <a href="index.html">Início</a>
+        <a href="musicais.html">Musicais</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="desbloqueios.html">Desbloqueios</a>
+
+    </nav>
+
+    <!-- Resumo dos pontos -->
+    <section class="historia">
+
+        <h2>
+            <i class="fa-solid fa-ticket"></i>
+            Seu progresso
+        </h2>
+
+        <p id="pontosResumo">
+            Pontos atuais: 0
+        </p>
+
+        <p>
+            Cada musical tem um custo em pontos. Quanto mais perguntas você acerta, mais opções libera.
+        </p>
+
+    </section>
+
+    <!-- Lista de musicais -->
+    <section>
+
+        <div class="lista-bloqueio">
+
+            <!-- Mamma Mia -->
+            <article class="bloqueio-card liberado" data-custo="0">
+
+                <h3>
+                    <i class="fa-solid fa-music"></i>
+                    Mamma Mia!
+                </h3>
+
+                <p>
+                    Custo: 0 pontos
+                </p>
+
+                <p>
+                    Musical baseado nas músicas do ABBA.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Liberado
+                </span>
+
+            </article>
+
+            <!-- Heathers -->
+            <article class="bloqueio-card bloqueado" data-custo="50">
+
+                <h3>
+                    <i class="fa-solid fa-mask"></i>
+                    Heathers
+                </h3>
+
+                <p>
+                    Custo: 50 pontos
+                </p>
+
+                <p>
+                    Baseado no filme de 1988, com humor ácido e clima escolar.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Bloqueado
+                </span>
+
+            </article>
+
+            <!-- Wicked -->
+            <article class="bloqueio-card bloqueado" data-custo="100">
+
+                <h3>
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                    Wicked
+                </h3>
+
+                <p>
+                    Custo: 100 pontos
+                </p>
+
+                <p>
+                    Mostra a história de Elphaba e Glinda antes de Dorothy.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Bloqueado
+                </span>
+
+            </article>
+
+            <!-- Hamilton -->
+            <article class="bloqueio-card bloqueado" data-custo="150">
+
+                <h3>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    Hamilton
+                </h3>
+
+                <p>
+                    Custo: 150 pontos
+                </p>
+
+                <p>
+                    Musical que mistura história americana, rap e hip-hop.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Bloqueado
+                </span>
+
+            </article>
+
+            <!-- Chicago -->
+            <article class="bloqueio-card bloqueado" data-custo="200">
+
+                <h3>
+                    <i class="fa-solid fa-city"></i>
+                    Chicago
+                </h3>
+
+                <p>
+                    Custo: 200 pontos
+                </p>
+
+                <p>
+                    Um clássico sobre fama, crime e números de jazz.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Bloqueado
+                </span>
+
+            </article>
+
+            <!-- Beetlejuice -->
+            <article class="bloqueio-card bloqueado" data-custo="250">
+
+                <h3>
+                    <i class="fa-solid fa-ghost"></i>
+                    Beetlejuice
+                </h3>
+
+                <p>
+                    Custo: 250 pontos
+                </p>
+
+                <p>
+                    Inspirado no filme de Tim Burton e cheio de humor sombrio.
+                </p>
+
+                <span class="pontos-tag status-texto">
+                    Bloqueado
+                </span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Voltar para o quiz -->
+    <section class="download">
+
+        <h2>
+            <i class="fa-solid fa-pen-to-square"></i>
+            Quer liberar mais musicais?
+        </h2>
+
+        <p>
+            Volte ao quiz, ganhe mais pontos e desbloqueie novas opções.
+        </p>
+
+        <a href="quiz.html" class="botao">
+            Ir para o Quiz
+        </a>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <p>
+            BroadwayVerse © 2026
+        </p>
+
+    </footer>
+
+    <!-- Script da página -->
+    <script>
+
+        // Lê os pontos salvos no navegador
+        const pontos = Number(localStorage.getItem("broadwayversePontos")) || 0;
+
+        // Atualiza o texto com a pontuação atual
+        const pontosResumo = document.getElementById("pontosResumo");
+        pontosResumo.textContent = "Pontos atuais: " + pontos;
+
+        // Seleciona todos os cards de bloqueio
+        const cards = document.querySelectorAll(".bloqueio-card");
+
+        // Percorre cada musical e verifica se está liberado
+        cards.forEach((card) => {
+            const custo = Number(card.dataset.custo);
+            const status = card.querySelector(".status-texto");
+
+            if (pontos >= custo) {
+                card.classList.remove("bloqueado");
+                card.classList.add("liberado");
+                status.textContent = "Liberado";
+            } else {
+                const faltam = custo - pontos;
+                status.textContent = "Faltam " + faltam + " pontos";
+            }
+        });
+
+        // Registra o service worker
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+
+    </script>
+
+</body>
+
+</html>

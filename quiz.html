@@ -3,115 +3,118 @@
 
 <head>
 
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba -->
+    <title>Quiz | BroadwayVerse</title>
 
-    <title>Quiz BroadwayVerse</title>
+    <!-- Fontes do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Ícones do projeto -->
     <link rel="stylesheet"
-          href="style.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Manifesto do aplicativo -->
+    <link rel="manifest" href="manifest.json">
 
 </head>
 
 <body>
 
+    <!-- Fundo decorativo -->
+    <div class="fundo-teatro"></div>
+
+    <!-- Cabeçalho -->
     <header>
 
-        <h1> Quiz BroadwayVerse</h1>
+        <div class="cortina-esquerda"></div>
+        <div class="cortina-direita"></div>
+
+        <h1>Quiz BroadwayVerse</h1>
 
         <p>
-            Responda as perguntas e torne-se uma estrela da Broadway!
+            Responda corretamente, ganhe pontos e desbloqueie musicais.
         </p>
 
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
 
         <a href="index.html">Início</a>
-
         <a href="musicais.html">Musicais</a>
-
         <a href="quiz.html">Quiz</a>
+        <a href="desbloqueios.html">Desbloqueios</a>
 
     </nav>
 
-    <!-- XP -->
+    <!-- Área de pontuação -->
+    <section class="historia">
 
-    <section>
+        <h2>
+            <i class="fa-solid fa-star"></i>
+            Pontuação
+        </h2>
 
-        <h2>⭐ Seu Progresso</h2>
+        <p id="pontos">
+            Pontos: 0
+        </p>
 
-        <div class="xp-container">
+        <p id="liberados">
+            Musicais liberados: 0
+        </p>
 
-            <div class="xp-bar"
-                 id="xpBar">
-
-            </div>
-
-        </div>
-
-        <h3 id="nivel">
-            Nível 1 - Iniciante
-        </h3>
+        <p id="total">
+            Pergunta 1 de 0
+        </p>
 
     </section>
 
-    <!-- Pergunta -->
+    <!-- Área de feedback -->
+    <section class="historia">
 
+        <p id="feedback" class="feedback-caixa">
+            Escolha uma resposta para começar.
+        </p>
+
+    </section>
+
+    <!-- Caixa principal do quiz -->
     <section class="quiz-box">
 
+        <!-- Pergunta atual -->
         <h2 id="pergunta">
-
-            Carregando...
-
+            Carregando perguntas...
         </h2>
 
+        <!-- Respostas -->
         <div id="respostas">
 
         </div>
 
     </section>
 
-    <!-- Pontuação -->
+    <!-- Resultado final -->
+    <section class="historia">
 
-    <section>
-
-        <h2 id="pontos">
-            Pontos: 0
+        <h2>
+            <i class="fa-solid fa-trophy"></i>
+            Resultado
         </h2>
 
-        <h2 id="streak">
-            Sequência: 0 🔥
-        </h2>
+        <p id="resultado">
+            O resultado final aparecerá aqui.
+        </p>
 
     </section>
 
-    <!-- Medalhas -->
-
-    <section>
-
-        <h2>🏅 Medalhas</h2>
-
-        <div id="medalhas">
-
-            Nenhuma medalha ainda.
-
-        </div>
-
-    </section>
-
-    <!-- Resultado -->
-
-    <section>
-
-        <h2 id="resultado">
-
-        </h2>
-
-    </section>
-
+    <!-- Rodapé -->
     <footer>
 
         <p>
@@ -120,19 +123,18 @@
 
     </footer>
 
+    <!-- Script do quiz -->
     <script src="quiz.js"></script>
 
+    <!-- Registro do service worker -->
     <script>
 
-    if("serviceWorker" in navigator){
-
-    navigator.serviceWorker.register(
-    "service-worker.js"
-    );
-
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
     }
 
-</script>
+    </script>
+
 </body>
 
 </html>

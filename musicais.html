@@ -3,198 +3,205 @@
 
 <head>
 
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <!-- Título da aba -->
     <title>Musicais | BroadwayVerse</title>
 
+    <!-- Fontes do projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícones do projeto -->
     <link rel="stylesheet"
-          href="style.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Manifesto do app -->
+    <link rel="manifest" href="manifest.json">
 
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Fundo decorativo -->
+    <div class="fundo-teatro"></div>
 
+    <!-- Cabeçalho -->
     <header>
 
-        <h1> Musicais mais conhecidos </h1>
+        <div class="cortina-esquerda"></div>
+        <div class="cortina-direita"></div>
+
+        <h1>Musicais da Broadway</h1>
 
         <p>
-            Conheça alguns dos maiores sucessos dos palcos.
+            Alguns dos títulos mais conhecidos do teatro musical.
         </p>
 
     </header>
 
-    <!-- Menu -->
-
+    <!-- Menu de navegação -->
     <nav>
 
         <a href="index.html">Início</a>
-
         <a href="musicais.html">Musicais</a>
-
         <a href="quiz.html">Quiz</a>
+        <a href="desbloqueios.html">Desbloqueios</a>
 
     </nav>
 
-    <!-- Cards dos Musicais -->
+    <!-- Introdução da página -->
+    <section class="historia">
 
+        <h2>
+            <i class="fa-solid fa-masks-theater"></i>
+            Sobre esta página
+        </h2>
+
+        <p>
+            Aqui estão alguns musicais ligados ao universo da Broadway
+            com resumos curtos e diretos.
+        </p>
+
+        <p>
+            O objetivo é apresentar obras conhecidas de forma simples,
+            sem deixar o conteúdo pesado.
+        </p>
+
+    </section>
+
+    <!-- Lista de musicais -->
     <section>
 
+        <!-- Grid de cards -->
         <div class="cards">
 
-            <!-- Mamma Mia -->
+            <!-- Mamma Mia! -->
+            <article class="card">
 
-            <div class="card">
-
+                <!-- Imagem do musical -->
                 <img src="imagens/mammamia.jpg"
-                     alt="Mamma Mia"
+                     alt="Cartaz de Mamma Mia!"
                      class="poster">
 
-                <h3>🎶 Mamma Mia!</h3>
+                <!-- Nome do musical -->
+                <h3>Mamma Mia!</h3>
 
+                <!-- Resumo curto -->
                 <p>
-
-                    Sophie está prestes a se casar e
-                    tenta descobrir quem é seu pai.
-
-                    Tudo isso ao som dos maiores
-                    sucessos do ABBA.
-
+                    Musical construído com canções do ABBA.
+                    A história gira em torno de Sophie e de sua busca por respostas sobre o passado.
                 </p>
 
-            </div>
-
-            <!-- Heathers -->
-
-            <div class="card">
-
-                <img src="imagens/heathers.jpg"
-                     alt="Heathers"
-                     class="poster">
-
-                <h3>🖤 Heathers</h3>
-
-                <p>
-
-                    Veronica tenta sobreviver ao caos
-                    social de sua escola enquanto lida
-                    com amizades perigosas.
-
-                </p>
-
-            </div>
+            </article>
 
             <!-- Wicked -->
-
-            <div class="card">
+            <article class="card">
 
                 <img src="imagens/wicked.jpg"
-                     alt="Wicked"
+                     alt="Cartaz de Wicked"
                      class="poster">
 
-                <h3>🧙 Wicked</h3>
+                <h3>Wicked</h3>
 
                 <p>
-
-                    A história das bruxas de Oz antes
-                    da chegada de Dorothy.
-
+                    Produção inspirada no universo de Oz.
+                    Mostra a relação entre Elphaba e Glinda antes da chegada de Dorothy.
                 </p>
 
-            </div>
+            </article>
 
             <!-- Hamilton -->
-
-            <div class="card">
+            <article class="card">
 
                 <img src="imagens/hamilton.jpg"
-                     alt="Hamilton"
+                     alt="Cartaz de Hamilton"
                      class="poster">
 
-                <h3>⚔️ Hamilton</h3>
+                <h3>Hamilton</h3>
 
                 <p>
-
-                    Musical que conta a vida de
-                    Alexander Hamilton utilizando
-                    rap e hip-hop.
-
+                    Musical criado por Lin-Manuel Miranda.
+                    Mistura história americana, rap, hip-hop e teatro musical.
                 </p>
 
-            </div>
+            </article>
+
+            <!-- Heathers -->
+            <article class="card">
+
+                <img src="imagens/heathers.jpg"
+                     alt="Cartaz de Heathers"
+                     class="poster">
+
+                <h3>Heathers</h3>
+
+                <p>
+                    Baseado no filme de 1988.
+                    A trama acompanha Veronica em uma escola dominada por popularidade e conflitos.
+                </p>
+
+            </article>
 
             <!-- Chicago -->
-
-            <div class="card">
+            <article class="card">
 
                 <img src="imagens/chicago.jpg"
-                     alt="Chicago"
+                     alt="Cartaz de Chicago"
                      class="poster">
 
-                <h3>🎷 Chicago</h3>
+                <h3>Chicago</h3>
 
                 <p>
-
-                    Um clássico da Broadway cheio de
-                    jazz, fama, escândalos e tribunais.
-
+                    Um dos musicais mais conhecidos da Broadway.
+                    A obra mistura crime, fama e números de jazz marcantes.
                 </p>
 
-            </div>
+            </article>
 
             <!-- Beetlejuice -->
-
-            <div class="card">
+            <article class="card">
 
                 <img src="imagens/beetlejuice.jpg"
-                     alt="Beetlejuice"
+                     alt="Cartaz de Beetlejuice"
                      class="poster">
 
-                <h3>👻 Beetlejuice</h3>
+                <h3>Beetlejuice</h3>
 
                 <p>
-
-                    Lydia encontra um fantasma
-                    extremamente estranho e divertido.
-
+                    Baseado no filme de Tim Burton.
+                    A história acompanha Lydia e a presença caótica de Beetlejuice.
                 </p>
 
-            </div>
+            </article>
 
         </div>
 
     </section>
 
-    <!-- Curiosidades -->
-
+    <!-- Curiosidades curtas -->
     <section class="historia">
 
-        <h2>🌟 Curiosidades</h2>
+        <h2>
+            <i class="fa-solid fa-circle-info"></i>
+            Curiosidades
+        </h2>
 
         <p>
-
-            A Broadway recebe milhões de visitantes
-            todos os anos e é considerada uma das
-            maiores referências mundiais em teatro
-            musical.
-
+            Em Nova York, um teatro com 500 ou mais lugares pode ser considerado da Broadway.
         </p>
 
         <p>
-
-            Muitos musicais permanecem em cartaz por
-            décadas devido ao enorme sucesso com o
-            público.
-
+            Muitos musicais começam em teatros menores antes de chegar aos palcos da Broadway.
         </p>
 
     </section>
 
+    <!-- Rodapé -->
     <footer>
 
         <p>
@@ -202,6 +209,20 @@
         </p>
 
     </footer>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+    <!-- Registro do service worker -->
+    <script>
+
+    if ("serviceWorker" in navigator) {
+
+        navigator.serviceWorker.register("service-worker.js");
+
+    }
+
+    </script>
 
 </body>
 
